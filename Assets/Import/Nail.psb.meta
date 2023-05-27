@@ -1,0 +1,1433 @@
+fileFormatVersion: 2
+guid: efe57906729d647608318a9b5b4ac854
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 256
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: LookAtWall01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 344
+      width: 82
+      height: 337
+    spriteID: 915dd87fc8f1f4c2b8a3c137cd702eea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 344}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 4
+      width: 82
+      height: 337
+    spriteID: 5c2708fde55ed4fa9b1302c43982c679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 227, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 349
+      width: 73
+      height: 347
+    spriteID: 988955c608fe0455790707d7df895365
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 227, y: 349}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 399
+      y: 4
+      width: 66
+      height: 361
+    spriteID: 2aef0b7204cbb476c8a862916d77e8f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 399, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 399
+      y: 373
+      width: 66
+      height: 361
+    spriteID: 247bb98a721cb413a917d1783d096b8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 399, y: 373}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 340
+      width: 49
+      height: 364
+    spriteID: 6c96d28eae62743a99b942c517dc629d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 615, y: 340}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 547
+      y: 4
+      width: 60
+      height: 385
+    spriteID: 5e04ebb08838244c49d70ce4e4462f09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 547, y: 4}
+    spritePosition: {x: 259, y: 93}
+  - name: LookAtWall08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 547
+      y: 397
+      width: 60
+      height: 385
+    spriteID: adbda497e097a4e298293c58549ac9d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 547, y: 397}
+    spritePosition: {x: 259, y: 93}
+  - name: LookAtWall09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 690
+      y: 4
+      width: 49
+      height: 364
+    spriteID: 4d53eaafdcc24488eaa2be64bee94f43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 690, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 4
+      width: 66
+      height: 361
+    spriteID: 9610e259cdeb84af3ab82f41e438a2c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 473, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 373
+      width: 66
+      height: 361
+    spriteID: 83d83ab713042409fab46e1a15cacd41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 473, y: 373}
+    spritePosition: {x: 274, y: 93}
+  - name: Walk1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 652
+      width: 98
+      height: 332
+    spriteID: baf6c2e70e6b54b758d2e4ad7f395d7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 652}
+    spritePosition: {x: 244, y: 94}
+  - name: Walk2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 109
+      height: 316
+    spriteID: e8d9d8b33de8b49d4be00a4bffe68469
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 235, y: 94}
+  - name: Walk3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 689
+      width: 67
+      height: 328
+    spriteID: 03dfbca076ea947e8b369aeecca293f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 689}
+    spritePosition: {x: 272, y: 95}
+  - name: Walk4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 4
+      width: 74
+      height: 337
+    spriteID: cbe8855b316784c2b9701e43fd783cfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 317, y: 4}
+    spritePosition: {x: 261, y: 93}
+  - name: Walk5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 4
+      width: 98
+      height: 332
+    spriteID: 19066e9ff30b249ba93e8a204a3456df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 4}
+    spritePosition: {x: 244, y: 94}
+  - name: Walk6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 328
+      width: 109
+      height: 316
+    spriteID: 55c38cde85af748918963033d69cdead
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 328}
+    spritePosition: {x: 235, y: 94}
+  - name: Walk7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 4
+      width: 67
+      height: 328
+    spriteID: 7155c5f6d615a41e985d6cb4500e15cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 615, y: 4}
+    spritePosition: {x: 272, y: 95}
+  - name: Walk8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 349
+      width: 74
+      height: 337
+    spriteID: 8d365f19740934feea23d84c8c354ab4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 317, y: 349}
+    spritePosition: {x: 261, y: 93}
+  rigSpriteImportData:
+  - name: LookAtWall01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 344
+      width: 82
+      height: 337
+    spriteID: b5f6dcfabdbca442db844a5f230df87c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 344}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 4
+      width: 82
+      height: 337
+    spriteID: 6f78d0e3794354436be04bc3f7568679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 227, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 349
+      width: 73
+      height: 347
+    spriteID: 5864a7935d9844bf6bcf22a15664c742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 227, y: 349}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 399
+      y: 4
+      width: 66
+      height: 361
+    spriteID: 6bbe823c934b34fc982e3f89760359ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 399, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 399
+      y: 373
+      width: 66
+      height: 361
+    spriteID: 595c904cf768c45828acb49dc3cd72ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 399, y: 373}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 340
+      width: 49
+      height: 364
+    spriteID: 7627c854c363148979610ac26370208a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 615, y: 340}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 547
+      y: 4
+      width: 60
+      height: 385
+    spriteID: 14571a6895e0e4c0da1bc193510f9207
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 547, y: 4}
+    spritePosition: {x: 259, y: 93}
+  - name: LookAtWall08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 547
+      y: 397
+      width: 60
+      height: 385
+    spriteID: eed186972234b499fa89dff6bbf04d6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 547, y: 397}
+    spritePosition: {x: 259, y: 93}
+  - name: LookAtWall09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 690
+      y: 4
+      width: 49
+      height: 364
+    spriteID: e47cff77801b04a7c971b69fb2924815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 690, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 4
+      width: 66
+      height: 361
+    spriteID: 9da1ad417ea8f43fb9aa5cfc394e2f7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 473, y: 4}
+    spritePosition: {x: 274, y: 93}
+  - name: LookAtWall11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 373
+      width: 66
+      height: 361
+    spriteID: 7cce4580a9f8e4d0e8d829f2438542dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 473, y: 373}
+    spritePosition: {x: 274, y: 93}
+  - name: Walk1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 652
+      width: 98
+      height: 332
+    spriteID: 7e7e7ed703eeb40389bb1b0f6bde2139
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 652}
+    spritePosition: {x: 244, y: 94}
+  - name: Walk2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 109
+      height: 316
+    spriteID: 01ccc68fc3feb47868c502ed0f2f7944
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 235, y: 94}
+  - name: Walk3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 689
+      width: 67
+      height: 328
+    spriteID: b6196541953fb46188eeccfd1b2de023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 689}
+    spritePosition: {x: 272, y: 95}
+  - name: Walk4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 4
+      width: 74
+      height: 337
+    spriteID: 7fa9ae26b14ae4d9394573a17d461e9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 317, y: 4}
+    spritePosition: {x: 261, y: 93}
+  - name: Walk5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 4
+      width: 98
+      height: 332
+    spriteID: 0608051f1981b46759d0586657b09feb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 4}
+    spritePosition: {x: 244, y: 94}
+  - name: Walk6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 328
+      width: 109
+      height: 316
+    spriteID: 46b37aa94f0ab48ebaa38ac3f00abdb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 328}
+    spritePosition: {x: 235, y: 94}
+  - name: Walk7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 4
+      width: 67
+      height: 328
+    spriteID: 891daaf1c2f234b1e9100c3bfc29a152
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 615, y: 4}
+    spritePosition: {x: 272, y: 95}
+  - name: Walk8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 349
+      width: 74
+      height: 337
+    spriteID: c9a4c9d06593046f79014ff329506f7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 317, y: 349}
+    spritePosition: {x: 261, y: 93}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers:
+  - name: LookAtWall
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 070664f74e7bd45dc925708483886829
+    layerID: 25
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: LookAtWall01
+    spriteName: LookAtWall01
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 915dd87fc8f1f4c2b8a3c137cd702eea
+    layerID: 37
+    mosaicPosition: {x: 121, y: 344}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall02
+    spriteName: LookAtWall02
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5c2708fde55ed4fa9b1302c43982c679
+    layerID: 36
+    mosaicPosition: {x: 227, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall03
+    spriteName: LookAtWall03
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 988955c608fe0455790707d7df895365
+    layerID: 35
+    mosaicPosition: {x: 227, y: 349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall04
+    spriteName: LookAtWall04
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2aef0b7204cbb476c8a862916d77e8f1
+    layerID: 34
+    mosaicPosition: {x: 399, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall05
+    spriteName: LookAtWall05
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 247bb98a721cb413a917d1783d096b8b
+    layerID: 33
+    mosaicPosition: {x: 399, y: 373}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall06
+    spriteName: LookAtWall06
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6c96d28eae62743a99b942c517dc629d
+    layerID: 32
+    mosaicPosition: {x: 615, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall07
+    spriteName: LookAtWall07
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5e04ebb08838244c49d70ce4e4462f09
+    layerID: 31
+    mosaicPosition: {x: 547, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall08
+    spriteName: LookAtWall08
+    isGroup: 0
+    parentIndex: 0
+    spriteID: adbda497e097a4e298293c58549ac9d7
+    layerID: 30
+    mosaicPosition: {x: 547, y: 397}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall09
+    spriteName: LookAtWall09
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4d53eaafdcc24488eaa2be64bee94f43
+    layerID: 29
+    mosaicPosition: {x: 690, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall10
+    spriteName: LookAtWall10
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9610e259cdeb84af3ab82f41e438a2c8
+    layerID: 28
+    mosaicPosition: {x: 473, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall11
+    spriteName: LookAtWall11
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 83d83ab713042409fab46e1a15cacd41
+    layerID: 27
+    mosaicPosition: {x: 473, y: 373}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 16df62543ea5a40199aaec95da34351c
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Walk1
+    spriteName: Walk1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: baf6c2e70e6b54b758d2e4ad7f395d7b
+    layerID: 7
+    mosaicPosition: {x: 4, y: 652}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk2
+    spriteName: Walk2
+    isGroup: 0
+    parentIndex: 12
+    spriteID: e8d9d8b33de8b49d4be00a4bffe68469
+    layerID: 6
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk3
+    spriteName: Walk3
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 03dfbca076ea947e8b369aeecca293f1
+    layerID: 5
+    mosaicPosition: {x: 121, y: 689}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk4
+    spriteName: Walk4
+    isGroup: 0
+    parentIndex: 12
+    spriteID: cbe8855b316784c2b9701e43fd783cfa
+    layerID: 8
+    mosaicPosition: {x: 317, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk5
+    spriteName: Walk5
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 19066e9ff30b249ba93e8a204a3456df
+    layerID: 12
+    mosaicPosition: {x: 121, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk6
+    spriteName: Walk6
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 55c38cde85af748918963033d69cdead
+    layerID: 11
+    mosaicPosition: {x: 4, y: 328}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk7
+    spriteName: Walk7
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 7155c5f6d615a41e985d6cb4500e15cb
+    layerID: 10
+    mosaicPosition: {x: 615, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk8
+    spriteName: Walk8
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 8d365f19740934feea23d84c8c354ab4
+    layerID: 9
+    mosaicPosition: {x: 317, y: 349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  rigPSDLayers:
+  - name: LookAtWall
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 4631a96d5801948e4b69b82436a28850
+    layerID: 25
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: LookAtWall01
+    spriteName: LookAtWall01
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b5f6dcfabdbca442db844a5f230df87c
+    layerID: 37
+    mosaicPosition: {x: 121, y: 344}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall02
+    spriteName: LookAtWall02
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6f78d0e3794354436be04bc3f7568679
+    layerID: 36
+    mosaicPosition: {x: 227, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall03
+    spriteName: LookAtWall03
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5864a7935d9844bf6bcf22a15664c742
+    layerID: 35
+    mosaicPosition: {x: 227, y: 349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall04
+    spriteName: LookAtWall04
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6bbe823c934b34fc982e3f89760359ad
+    layerID: 34
+    mosaicPosition: {x: 399, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall05
+    spriteName: LookAtWall05
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 595c904cf768c45828acb49dc3cd72ed
+    layerID: 33
+    mosaicPosition: {x: 399, y: 373}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall06
+    spriteName: LookAtWall06
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7627c854c363148979610ac26370208a
+    layerID: 32
+    mosaicPosition: {x: 615, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall07
+    spriteName: LookAtWall07
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 14571a6895e0e4c0da1bc193510f9207
+    layerID: 31
+    mosaicPosition: {x: 547, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall08
+    spriteName: LookAtWall08
+    isGroup: 0
+    parentIndex: 0
+    spriteID: eed186972234b499fa89dff6bbf04d6a
+    layerID: 30
+    mosaicPosition: {x: 547, y: 397}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall09
+    spriteName: LookAtWall09
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e47cff77801b04a7c971b69fb2924815
+    layerID: 29
+    mosaicPosition: {x: 690, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall10
+    spriteName: LookAtWall10
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9da1ad417ea8f43fb9aa5cfc394e2f7c
+    layerID: 28
+    mosaicPosition: {x: 473, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LookAtWall11
+    spriteName: LookAtWall11
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7cce4580a9f8e4d0e8d829f2438542dc
+    layerID: 27
+    mosaicPosition: {x: 473, y: 373}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: b60b84d9b1b65474cbc7351a48d81e2a
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Walk1
+    spriteName: Walk1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 7e7e7ed703eeb40389bb1b0f6bde2139
+    layerID: 7
+    mosaicPosition: {x: 4, y: 652}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk2
+    spriteName: Walk2
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 01ccc68fc3feb47868c502ed0f2f7944
+    layerID: 6
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk3
+    spriteName: Walk3
+    isGroup: 0
+    parentIndex: 12
+    spriteID: b6196541953fb46188eeccfd1b2de023
+    layerID: 5
+    mosaicPosition: {x: 121, y: 689}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk4
+    spriteName: Walk4
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 7fa9ae26b14ae4d9394573a17d461e9f
+    layerID: 8
+    mosaicPosition: {x: 317, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk5
+    spriteName: Walk5
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 0608051f1981b46759d0586657b09feb
+    layerID: 12
+    mosaicPosition: {x: 121, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk6
+    spriteName: Walk6
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 46b37aa94f0ab48ebaa38ac3f00abdb1
+    layerID: 11
+    mosaicPosition: {x: 4, y: 328}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk7
+    spriteName: Walk7
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 891daaf1c2f234b1e9100c3bfc29a152
+    layerID: 10
+    mosaicPosition: {x: 615, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Walk8
+    spriteName: Walk8
+    isGroup: 0
+    parentIndex: 12
+    spriteID: c9a4c9d06593046f79014ff329506f7b
+    layerID: 9
+    mosaicPosition: {x: 317, y: 349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
