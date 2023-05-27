@@ -9,6 +9,7 @@ public class Nail : MonoBehaviour
     #region Inspector Items
     [SerializeField] private float walkSpeed;
     [SerializeField] private Transform flipControl;
+    [SerializeField] private Collider2D groundCollider;
     [Header("Detection")]
     [SerializeField] private Detector wallDetect;
     [SerializeField] private Detector ledgeDetect;
@@ -23,7 +24,7 @@ public class Nail : MonoBehaviour
     #region Animation Control Items
     private enum AnimationState
     {
-        Walk, LookAtWall
+        Walk, LookAtWall, ClimbOnLedge,
     }
 
     private static readonly int AniStateHash = Animator.StringToHash("State");
@@ -55,10 +56,6 @@ public class Nail : MonoBehaviour
         _currentAnimationState = AnimationState.Walk;
     }
 
-    private void Update()
-    {
-    }
-
     private void FixedUpdate()
     {
         _ani.SetInteger(AniStateHash, (int)_currentAnimationState);
@@ -71,8 +68,20 @@ public class Nail : MonoBehaviour
             case AnimationState.LookAtWall:
                 LookAtWallState();
                 break;
+            case AnimationState.ClimbOnLedge:
+                ClimbOnLedgeState();
+                break;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (!ledgeDetect.IsBlocked && wallDetect.IsBlocked)
+        {
+            _currentAnimationState = AnimationState.ClimbOnLedge;
+        }
+    }
+
     #endregion
     
     #region State Functions
@@ -81,7 +90,10 @@ public class Nail : MonoBehaviour
         _body.velocity = Vector2.right * (walkSpeed * _direction);
         if (wallDetect.IsBlocked)
         {
-            _currentAnimationState = AnimationState.LookAtWall;
+            if (ledgeDetect.IsBlocked)
+            {
+                _currentAnimationState = AnimationState.LookAtWall;
+            }
         }
     }
 
@@ -93,6 +105,22 @@ public class Nail : MonoBehaviour
             flipControl.transform.localScale = new Vector3(_direction, 1, 1);
             _currentAnimationState = AnimationState.Walk;
             _stateDone = false;
+        }
+    }
+
+    private void ClimbOnLedgeState()
+    {
+        _body.simulated = false;
+        groundCollider.enabled = false;
+        if (_stateDone)
+        {
+            _stateDone = false;
+            transform.localPosition += new Vector3(0.4883f * _direction, 1, 0);
+            _body.simulated = true;
+            groundCollider.enabled = true;
+            _body.velocity = Vector2.zero;
+            _body.angularVelocity = 0;
+            _currentAnimationState = AnimationState.Walk;
         }
     }
     #endregion
