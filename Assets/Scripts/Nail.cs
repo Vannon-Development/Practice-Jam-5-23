@@ -87,7 +87,8 @@ public class Nail : MonoBehaviour
     #region State Functions
     private void WalkState()
     {
-        _body.velocity = Vector2.right * (walkSpeed * _direction);
+        _body.velocity = new Vector2(walkSpeed * _direction, _body.velocity.y);
+        _body.angularVelocity = 0;
         if (wallDetect.IsBlocked)
         {
             if (ledgeDetect.IsBlocked)
