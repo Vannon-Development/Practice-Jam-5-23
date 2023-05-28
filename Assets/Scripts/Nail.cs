@@ -1,4 +1,5 @@
 using System;
+using BCLib;
 using UnityEngine;
 
 [AddComponentMenu("Escape Hammer/Nail Character")]
@@ -105,25 +106,44 @@ public class Nail : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!ledgeDetect.IsBlocked && wallDetect.IsBlocked)
+        CalculateContacts(other);
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        CalculateContacts(other);
+    }
+    #endregion
+
+    private void CalculateContacts(Collision2D other)
+    {
+        var horiz = false;
+        var vert = false;
+        foreach (var c in other.contacts)
+        {
+            if (!c.normal.x.NearZero())
+                horiz = true;
+            if (!c.normal.y.NearZero())
+                vert = true;
+        }
+
+        if (!ledgeDetect.IsBlocked && wallDetect.IsBlocked && horiz)
         {
             _currentAnimationState = AnimationState.ClimbOnLedge;
         }
 
-        if (_currentAnimationState == AnimationState.Fall)
+        if (_currentAnimationState == AnimationState.Fall && vert)
         {
             _currentAnimationState = AnimationState.Walk;
         }
     }
-
-    #endregion
     
     #region State Functions
     private void WalkState()
     {
         _body.velocity = new Vector2(walkSpeed * _direction, _body.velocity.y);
         _body.angularVelocity = 0;
-        
+
         if (wallDetect.IsBlocked && ledgeDetect.IsBlocked)
         {
             _body.velocity = new Vector2(0, _body.velocity.y);
