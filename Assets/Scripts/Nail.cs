@@ -24,23 +24,26 @@ public class Nail : MonoBehaviour
     #region Animation Control Items
     private enum AnimationState
     {
-        Walk, LookAtWall, ClimbOnLedge,
+        Walk, LookAtWall, ClimbOnLedge, Jump, Fall
     }
 
     private static readonly int AniStateHash = Animator.StringToHash("State");
 
     private AnimationState _currentAnimationState;
-    private Vector2 _velocityBoost;
     private bool _stateDone;
 
     private void AnimationEnded()
     {
         _stateDone = true;
     }
+    #endregion
+    
+    #region Jump Control Items
+    private bool _applyJumpVelocity;
 
-    private void VelocityBoost(float amount)
+    private void JumpStart()
     {
-        _velocityBoost = Vector2.right * amount;
+        _applyJumpVelocity = true;
     }
     #endregion
 
@@ -54,6 +57,26 @@ public class Nail : MonoBehaviour
         _ani = GetComponent<Animator>();
         _body = GetComponent<Rigidbody2D>();
         _currentAnimationState = AnimationState.Walk;
+        dropDetect.ForceBlock();
+    }
+
+    private void Update()
+    {
+        if (_stateDone)
+        {
+            switch (_currentAnimationState)
+            {
+                case AnimationState.ClimbOnLedge:
+                    ClimbOnLedgeStateEnd();
+                    break;
+                case AnimationState.LookAtWall:
+                    LookAtWallStateEnd();
+                    break;
+                case AnimationState.Jump:
+                    JumpStateEnded();
+                    break;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -71,6 +94,12 @@ public class Nail : MonoBehaviour
             case AnimationState.ClimbOnLedge:
                 ClimbOnLedgeState();
                 break;
+            case AnimationState.Jump:
+                JumpState();
+                break;
+            case AnimationState.Fall:
+                FallState();
+                break;
         }
     }
 
@@ -79,6 +108,11 @@ public class Nail : MonoBehaviour
         if (!ledgeDetect.IsBlocked && wallDetect.IsBlocked)
         {
             _currentAnimationState = AnimationState.ClimbOnLedge;
+        }
+
+        if (_currentAnimationState == AnimationState.Fall)
+        {
+            _currentAnimationState = AnimationState.Walk;
         }
     }
 
@@ -89,40 +123,75 @@ public class Nail : MonoBehaviour
     {
         _body.velocity = new Vector2(walkSpeed * _direction, _body.velocity.y);
         _body.angularVelocity = 0;
-        if (wallDetect.IsBlocked)
+        
+        if (wallDetect.IsBlocked && ledgeDetect.IsBlocked)
         {
-            if (ledgeDetect.IsBlocked)
-            {
-                _currentAnimationState = AnimationState.LookAtWall;
-            }
+            _body.velocity = new Vector2(0, _body.velocity.y);
+            _currentAnimationState = AnimationState.LookAtWall;
+        }
+        else if (!dropDetect.IsBlocked)
+        {
+            _body.velocity = Vector2.zero;
+            _currentAnimationState = AnimationState.Jump;
         }
     }
 
     private void LookAtWallState()
     {
-        if (_stateDone)
-        {
-            _direction *= -1;
-            flipControl.transform.localScale = new Vector3(_direction, 1, 1);
-            _currentAnimationState = AnimationState.Walk;
-            _stateDone = false;
-        }
+        _body.velocity = Vector2.zero;
+        _body.angularVelocity = 0;
+    }
+
+    private void LookAtWallStateEnd()
+    {
+        _direction *= -1;
+        flipControl.transform.localScale = new Vector3(_direction, 1, 1);
+        _currentAnimationState = AnimationState.Walk;
+        _ani.SetInteger(AniStateHash, (int)_currentAnimationState);
+        wallDetect.ForceReset();
+        _stateDone = false;
     }
 
     private void ClimbOnLedgeState()
     {
+        _body.velocity = Vector2.zero;
+        _body.angularVelocity = 0;
         _body.simulated = false;
         groundCollider.enabled = false;
-        if (_stateDone)
+    }
+
+    private void ClimbOnLedgeStateEnd()
+    {
+        transform.localPosition += new Vector3(0.2883f * _direction, 1, 0);
+        _body.simulated = true;
+        groundCollider.enabled = true;
+        wallDetect.ForceReset();
+        _body.velocity = Vector2.zero;
+        _body.angularVelocity = 0;
+        _currentAnimationState = AnimationState.Walk;
+        _ani.SetInteger(AniStateHash, (int)_currentAnimationState);
+        _stateDone = false;
+    }
+
+    private void JumpState()
+    {
+        if (_applyJumpVelocity)
         {
-            _stateDone = false;
-            transform.localPosition += new Vector3(0.4883f * _direction, 1, 0);
-            _body.simulated = true;
-            groundCollider.enabled = true;
-            _body.velocity = Vector2.zero;
-            _body.angularVelocity = 0;
-            _currentAnimationState = AnimationState.Walk;
+            _body.velocity = new Vector2(0.6f / 0.5f * _direction, _body.velocity.y);
         }
+    }
+
+    private void JumpStateEnded()
+    {
+        _applyJumpVelocity = false;
+        _body.velocity = new Vector2(0, _body.velocity.y);
+        _currentAnimationState = AnimationState.Fall;
+        _stateDone = false;
+    }
+
+    private void FallState()
+    {
+        _body.velocity = new Vector2(0, _body.velocity.y);
     }
     #endregion
 }

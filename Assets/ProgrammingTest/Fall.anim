@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walk
+  m_Name: Fall
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.125
+        time: 0.016666668
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk1
+    path: FlipControl/Nail/Fall1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -58,7 +58,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.125
+        time: 0.016666668
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -67,7 +67,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.033333335
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -79,7 +79,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk2
+    path: FlipControl/Nail/Fall2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -95,7 +95,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.033333335
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -104,7 +104,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.05
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -116,7 +116,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk3
+    path: FlipControl/Nail/Fall3
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -132,7 +132,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.05
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -141,7 +141,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.06666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -153,7 +153,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk4
+    path: FlipControl/Nail/Fall4
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -169,7 +169,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.06666667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -178,7 +178,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.625
+        time: 0.083333336
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -190,7 +190,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk5
+    path: FlipControl/Nail/Fall5
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -206,7 +206,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.625
+        time: 0.083333336
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -215,7 +215,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -227,7 +227,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk6
+    path: FlipControl/Nail/Fall6
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -243,7 +243,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.1
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -252,7 +252,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.875
+        time: 0.11666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -264,7 +264,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk7
+    path: FlipControl/Nail/Fall7
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -280,7 +280,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.875
+        time: 0.11666667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -289,7 +289,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1
+        time: 0.13333334
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -301,11 +301,11 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk8
+    path: FlipControl/Nail/Fall8
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
-  m_SampleRate: 8
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -313,56 +313,56 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2690888964
+      path: 2997001713
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 963306686
+      path: 732679243
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1315820584
+      path: 1554840797
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3490267531
+      path: 3267914110
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2802741533
+      path: 3050265064
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1040654503
+      path: 751175762
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1224740913
+      path: 1539389636
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3653176736
+      path: 3414041941
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -374,7 +374,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.13333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -403,7 +403,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.125
+        time: 0.016666668
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -415,7 +415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk1
+    path: FlipControl/Nail/Fall1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -431,7 +431,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.125
+        time: 0.016666668
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -440,7 +440,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.033333335
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -452,7 +452,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk2
+    path: FlipControl/Nail/Fall2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -468,7 +468,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.033333335
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -477,7 +477,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.05
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -489,7 +489,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk3
+    path: FlipControl/Nail/Fall3
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -505,7 +505,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.05
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -514,7 +514,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.06666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -526,7 +526,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk4
+    path: FlipControl/Nail/Fall4
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -542,7 +542,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.06666667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -551,7 +551,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.625
+        time: 0.083333336
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -563,7 +563,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk5
+    path: FlipControl/Nail/Fall5
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -579,7 +579,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.625
+        time: 0.083333336
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -588,7 +588,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -600,7 +600,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk6
+    path: FlipControl/Nail/Fall6
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -616,7 +616,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.1
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -625,7 +625,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.875
+        time: 0.11666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -637,7 +637,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk7
+    path: FlipControl/Nail/Fall7
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -653,7 +653,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.875
+        time: 0.11666667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -662,7 +662,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1
+        time: 0.13333334
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -674,7 +674,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: FlipControl/Nail/Walk8
+    path: FlipControl/Nail/Fall8
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
