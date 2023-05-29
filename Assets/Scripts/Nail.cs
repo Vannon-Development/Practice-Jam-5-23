@@ -5,6 +5,7 @@ using UnityEngine;
 [AddComponentMenu("Escape Hammer/Nail Character")]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(AudioSource))]
 public class Nail : MonoBehaviour
 {
     #region Inspector Items
@@ -15,11 +16,17 @@ public class Nail : MonoBehaviour
     [SerializeField] private Detector wallDetect;
     [SerializeField] private Detector ledgeDetect;
     [SerializeField] private Detector dropDetect;
+    [Header("Sounds")]
+    [SerializeField] private AudioClip climbSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip landSound;
+    [SerializeField] private AudioClip lookAtWallSound;
     #endregion
     
     #region Components
     private Animator _ani;
     private Rigidbody2D _body;
+    private AudioSource _audio;
     #endregion
 
     #region Animation Control Items
@@ -37,6 +44,10 @@ public class Nail : MonoBehaviour
     {
         _stateDone = true;
     }
+    #endregion
+    
+    #region Audio Control Items
+    private bool _allowAudioTrigger = true;
     #endregion
     
     #region Jump Control Items
@@ -57,6 +68,7 @@ public class Nail : MonoBehaviour
     {
         _ani = GetComponent<Animator>();
         _body = GetComponent<Rigidbody2D>();
+        _audio = GetComponent<AudioSource>();
         _currentAnimationState = AnimationState.Walk;
         dropDetect.ForceBlock();
     }
@@ -164,12 +176,18 @@ public class Nail : MonoBehaviour
 
     private void LookAtWallState()
     {
+        if (_allowAudioTrigger)
+        {
+            _audio.PlayOneShot(lookAtWallSound);
+            _allowAudioTrigger = false;
+        }
         _body.velocity = Vector2.zero;
         _body.angularVelocity = 0;
     }
 
     private void LookAtWallStateEnd()
     {
+        _allowAudioTrigger = true;
         _direction *= -1;
         flipControl.transform.localScale = new Vector3(_direction, 1, 1);
         _currentAnimationState = AnimationState.Walk;
@@ -180,6 +198,11 @@ public class Nail : MonoBehaviour
 
     private void ClimbOnLedgeState()
     {
+        if (_allowAudioTrigger)
+        {
+            _audio.PlayOneShot(climbSound);
+            _allowAudioTrigger = false;
+        }
         _body.velocity = Vector2.zero;
         _body.angularVelocity = 0;
         _body.simulated = false;
@@ -188,6 +211,7 @@ public class Nail : MonoBehaviour
 
     private void ClimbOnLedgeStateEnd()
     {
+        _allowAudioTrigger = true;
         transform.localPosition += new Vector3(0.2883f * _direction, 1, 0);
         _body.simulated = true;
         groundCollider.enabled = true;
@@ -201,6 +225,11 @@ public class Nail : MonoBehaviour
 
     private void JumpState()
     {
+        if (_allowAudioTrigger)
+        {
+            _audio.PlayOneShot(jumpSound);
+            _allowAudioTrigger = false;
+        }
         if (_applyJumpVelocity)
         {
             _body.velocity = new Vector2(0.6f / 0.5f * _direction, _body.velocity.y);
@@ -209,6 +238,7 @@ public class Nail : MonoBehaviour
 
     private void JumpStateEnded()
     {
+        _allowAudioTrigger = true;
         _applyJumpVelocity = false;
         _body.velocity = new Vector2(0, _body.velocity.y);
         _currentAnimationState = AnimationState.Fall;
@@ -222,11 +252,18 @@ public class Nail : MonoBehaviour
 
     private void LandState()
     {
+        if (_allowAudioTrigger)
+        {
+            _audio.PlayOneShot(landSound);
+            _allowAudioTrigger = false;
+        }
+
         _body.velocity = new Vector2(0, _body.velocity.y);
     }
 
     private void LandStateEnded()
     {
+        _allowAudioTrigger = true;
         _currentAnimationState = AnimationState.Walk;
         _stateDone = false;
     }
