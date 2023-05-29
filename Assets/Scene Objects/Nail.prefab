@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6897670891401410838}
   - component: {fileID: 8146406655200957301}
   - component: {fileID: 615786647466329715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 3706365215844754064}
   - component: {fileID: 4200352181760837868}
   - component: {fileID: 6327207991413294422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LedgeDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 1705058869554378546}
   - component: {fileID: 6894629362577001808}
   - component: {fileID: 8442989391178449599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,6 +389,10 @@ PrefabInstance:
     - target: {fileID: -8653719598885068355, guid: efe57906729d647608318a9b5b4ac854, type: 3}
       propertyPath: m_Name
       value: Nail
+      objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: efe57906729d647608318a9b5b4ac854, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8588739586568903883, guid: efe57906729d647608318a9b5b4ac854, type: 3}
       propertyPath: m_IsActive
