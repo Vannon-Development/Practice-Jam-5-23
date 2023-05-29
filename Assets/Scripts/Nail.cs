@@ -25,7 +25,7 @@ public class Nail : MonoBehaviour
     #region Animation Control Items
     private enum AnimationState
     {
-        Walk, LookAtWall, ClimbOnLedge, Jump, Fall
+        Walk, LookAtWall, ClimbOnLedge, Jump, Fall, Land
     }
 
     private static readonly int AniStateHash = Animator.StringToHash("State");
@@ -76,6 +76,9 @@ public class Nail : MonoBehaviour
                 case AnimationState.Jump:
                     JumpStateEnded();
                     break;
+                case AnimationState.Land:
+                    LandStateEnded();
+                    break;
             }
         }
     }
@@ -100,6 +103,9 @@ public class Nail : MonoBehaviour
                 break;
             case AnimationState.Fall:
                 FallState();
+                break;
+            case AnimationState.Land:
+                LandState();
                 break;
         }
     }
@@ -134,7 +140,7 @@ public class Nail : MonoBehaviour
 
         if (_currentAnimationState == AnimationState.Fall && vert)
         {
-            _currentAnimationState = AnimationState.Walk;
+            _currentAnimationState = AnimationState.Land;
         }
     }
     
@@ -212,6 +218,17 @@ public class Nail : MonoBehaviour
     private void FallState()
     {
         _body.velocity = new Vector2(0, _body.velocity.y);
+    }
+
+    private void LandState()
+    {
+        _body.velocity = new Vector2(0, _body.velocity.y);
+    }
+
+    private void LandStateEnded()
+    {
+        _currentAnimationState = AnimationState.Walk;
+        _stateDone = false;
     }
     #endregion
 }
