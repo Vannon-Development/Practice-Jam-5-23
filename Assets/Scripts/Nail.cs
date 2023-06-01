@@ -132,6 +132,8 @@ public class Nail : MonoBehaviour
         CalculateContacts(other);
     }
     #endregion
+    
+    #region Physics Functions
 
     private void CalculateContacts(Collision2D other)
     {
@@ -155,6 +157,8 @@ public class Nail : MonoBehaviour
             _currentAnimationState = AnimationState.Land;
         }
     }
+    
+    #endregion
     
     #region State Functions
     private void WalkState()
