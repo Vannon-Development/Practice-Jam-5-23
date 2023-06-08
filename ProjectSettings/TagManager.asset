@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: NailBackEye
+    uniqueID: 2338929597
+    locked: 0
+  - name: NailFrontEye
+    uniqueID: 3425607495
+    locked: 0
